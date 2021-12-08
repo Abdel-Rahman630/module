@@ -1,0 +1,170 @@
+/* ________________________________________________________ start header ________________________________________________________ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+
+header .navbar {
+    padding: 1.25rem 0;
+    background-color: transparent !important;
+    transition: all 0.3s ease-in-out;
+}
+
+header .logo {
+    width: 175px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .anchorParent {
+    justify-content: end;
+}
+
+header .anchorParent .anchorLink {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: white !important;
+    position: relative;
+    padding: 0.5rem 0 !important;
+    margin: 0 0.5rem;
+    width: max-content;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+header .anchorParent .anchorLink::before {
+    transition: all 0.5s ease-in-out;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #e12827;
+    position: absolute;
+}
+
+header .anchorParent .anchorLink:hover::before,
+header .anchorParent .anchorLink.active::before {
+    width: 100%;
+}
+header .anchorParent .anchorLink:last-child::before {
+    display: none;
+}
+
+header .buttonsParent {
+    display: flex;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+}
+
+header .showSmall {
+    display: none;
+}
+
+header .burgerIcon {
+    border-color: white !important;
+}
+header .burgerIcon:focus {
+    box-shadow: none !important
+}
+
+header .anchorParent .anchorLink svg {
+    margin-right: 5px;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 60%;
+    width: 23px;
+    height: 23px;
+    padding: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .anchorParent .anchorLink:last-child:hover {
+    color: #203367 !important;
+}
+
+header .anchorParent .anchorLink:last-child:hover svg {
+    background-color: white;
+}
+header .anchorParent .anchorLink:last-child:hover svg path {
+    fill: #203367;
+}
+
+
+header .navbar.active {
+    background-color: white !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+header .navbar.active .logo {
+    width: 150px;
+}
+
+header .navbar.active .anchorParent .anchorLink,
+header .navbar.active button {
+    color: #203367 !important;
+}
+
+header .navbar.active .anchorParent .anchorLink svg {
+    background-color: #20336786;
+}
+
+header .navbar.active .burgerIcon {
+    border-color: #203367 !important;
+}
+
+header .navbar .burgerIcon span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 100' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+header .navbar.active .burgerIcon span {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+header.overlay {
+    background-color: transparent;
+    height: 100vh;
+}
+@media (max-width: 991px) {
+    header.overlay {
+        background-color: rgba(0, 0, 0, 0.719);
+        height: 100vh;
+    }
+    header .showSmall {
+        display: block;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    header .showLarge {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    header .logo {
+        width: 150px;
+    }
+    header .navbar.active .logo {
+        width: 125px;
+    }
+    
+}
+
+@media (max-width: 569px) {
+    header .logo {
+        width: 125px;
+    }
+    header .navbar.active .logo {
+        width: 100px;
+    }
+    
+}
+
+/* _______________________________________________________ end header _________________________________________________________ */

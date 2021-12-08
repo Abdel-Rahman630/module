@@ -1,0 +1,10 @@
+.newsMedia {
+    padding: 0 0 4rem 0;
+}
+
+@media (max-width: 992px) {
+    .newsMedia {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}

@@ -1,0 +1,23 @@
+.clients {
+    padding: 4rem 0;
+}
+
+.clients a {
+    position: relative;
+}
+
+.clients .imgParent  {
+    text-align: center;
+}
+
+.clients .imgParent a  img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+    width: 70%;
+}
+ 
+.clients .imgParent a  img:hover {
+    filter: none;
+    opacity: 1;
+}

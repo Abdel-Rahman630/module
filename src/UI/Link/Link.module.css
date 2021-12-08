@@ -1,0 +1,42 @@
+a.mainAnchorLink {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 4rem;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+a.mainAnchorLink::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(222, 39, 38, 10%);
+}
+
+a.mainAnchorLink span {
+    z-index: 2;
+}
+a.mainAnchorLink:hover {
+    z-index: 1;
+    color: white;
+}
+a.mainAnchorLink:hover::before {
+    width: 100%;
+    z-index: -1;
+    background-color: #DE2726;
+}
+
+a.blueAnchorLink {
+    background-color: #1B3668;
+}
+a.greenAnchorLink {
+    background-color: #00A850;
+}

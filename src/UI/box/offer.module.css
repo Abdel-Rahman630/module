@@ -1,0 +1,130 @@
+.boxParent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.boxParent .custCol {
+    width: calc(100% / 5);
+    flex: 0 0 calc(100% / 5);
+    padding: 0 15px;
+}
+
+.boxParent .custCol .box {
+    border-radius: 22px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    height: 100%;
+    padding: 0 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boxParent .custCol .box .imgParent {
+    background-color: white;
+    width: 80px;
+    margin: auto;
+    border-radius: 50%;
+    height: 80px;
+    line-height: 80px;
+    transform: translateY(-45px);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+
+}
+
+.boxParent .custCol .box .imgParent img {
+    width: 40px;
+}
+
+.boxParent .custCol .box p {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: black;
+    opacity: 70%;
+    transition: all 0.2s ease-in-out;
+    min-height: 100px;
+    margin-bottom: 0;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.boxParent .custCol .box a {
+    background-color: rgba(187, 188, 187, 10%);
+    display: inline-block;
+    width: 35px;
+    border-radius: 50%;
+    height: 35px;
+    line-height: 35px;
+    transition: all 0.2s ease-in-out;
+}
+.boxParent .custCol .box a svg {
+    width: 17px;
+}
+
+.boxParent .custCol .box a svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.boxParent .custCol .box:hover p {
+    opacity: 1;
+}
+
+.boxParent .custCol .box:hover a {
+    background-color: #1B3668;
+}
+
+.boxParent .custCol .box:hover svg path {
+    fill: white;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .boxParent .custCol {
+        width: calc(100% / 4);
+        flex: 0 0 calc(100% / 4);
+        padding: 0 15px;
+        margin-bottom: 3.25rem;
+    }
+
+    .boxParent .custCol .box .imgParent {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        transform: translateY(-30px);
+    }
+    
+    .boxParent .custCol .box .imgParent img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 769px) {
+    .boxParent .custCol {
+        width: calc(100% / 3);
+        flex: 0 0 calc(100% / 3);
+    }
+    .boxParent .custCol .box {
+        padding: 0 0.75rem 2rem 0.75rem;
+    }
+    .boxParent .custCol .box p {
+        margin-top: 0;
+        align-items: center;
+    }
+}
+
+@media (max-width: 569px) {
+    .boxParent .custCol {
+        width: calc(100% / 2);
+        flex: 0 0 calc(100% / 2);
+        padding: 0 10px;
+    }
+    .boxParent .custCol:nth-child(odd) {
+        padding-left: 0;
+    }
+    .boxParent .custCol:nth-child(even) {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,60 @@
+
+/*________________________________________________________ start popup ________________________________________________________*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5889706224286589) 50%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup form {
+    width: 50rem;
+    padding: 0 15px;
+}
+
+.popup form .inputParent {
+    display: flex;
+}
+.inputParent input {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-left: 0;
+}
+.popup form .inputParent input::placeholder {
+    color: white;
+}
+.popup form .inputParent input:focus {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: white;
+    color: white;
+    
+}
+.popup form .inputParent button,
+.popup form .inputParent button:hover,
+.popup form .inputParent button:focus,
+.popup form .inputParent button:active {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    padding-right: 0;
+    box-shadow: none !important;
+}
+
+/*________________________________________________________ end popup ________________________________________________________*/

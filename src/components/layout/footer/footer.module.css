@@ -1,0 +1,176 @@
+/* _______________________________________________________ start footer _________________________________________________________ */
+footer {
+    background-color: #1E1E22;
+    padding: 4rem 0 0;
+}
+
+footer .footerDetails .logo {
+    width: 150px;
+}
+
+
+
+footer .footerDetails p {
+    margin-bottom: 1.25rem;
+    color: white;
+    padding: 2.25rem 0;
+    opacity: 70%;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(99, 101, 106, 70%);
+    width: 75%;
+}
+
+footer .footerDetails a {
+    display: block;
+}
+
+footer .footerDetails ul {
+    margin-bottom: 0;
+    display: flex;
+    gap: 20px;
+}
+
+footer .footerDetails ul li a {
+    color: white;
+}
+
+footer .footerDetails ul li svg {
+    opacity: 70%;
+    background: black;
+    border-radius: 50%;
+    width: 36px !important;
+    height: 36px;
+    padding: 9px;
+    transition: all 0.2s ease-in-out;
+}
+footer .footerDetails ul li:hover svg {
+    color: #203367;
+    background-color: white;
+    opacity: 1;
+}
+
+footer .linksParent h4 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.15rem;
+}
+
+footer .linksParent ul li a {
+    margin-bottom: 0.9rem;
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+    font-size: 0.85rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+
+footer .linksParent ul li a.address {
+    width: 65%;
+}
+
+footer .linksParent ul li a.phone {
+    opacity: 1;
+    font-weight: bold;
+}
+
+footer .linksParent ul li a.phone:first-child {
+    padding-inline-end: 0.25rem;
+}
+footer .linksParent ul li a.red {
+    color: #DE2726;
+    font-weight: bold;
+    opacity: 1;
+}
+
+footer .linksParent ul li a::before {
+    transition: all 0.5s ease-in-out;
+    content: "";
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #e12827;
+    position: absolute;
+}
+footer .linksParent ul li a:hover {
+    opacity: 1;
+}
+footer .linksParent ul li a:hover::before,
+footer .linksParent ul li a.active::before {
+    width: 100%;
+}
+
+
+footer .contentParent h4 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.15rem;
+    color: transparent;
+}
+
+footer .contentParent p {
+    color: white;
+    opacity: 70%;
+    font-size: 0.85rem;
+    width: 75%;
+}
+
+footer .contentParent img {
+    width: 125px;
+}
+
+footer .copyright {
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(99, 101, 106, 70%);
+    text-align: center;
+    margin-top: 1rem;
+    
+    font-size: 0.85rem;
+}
+
+footer .copyright p {
+    margin-bottom: 0;
+    color: #999999;
+}
+
+footer .copyright p a {
+    color: #999999;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+footer .copyright p a:hover {
+    color: white;
+}
+
+/* ______________ start mediaquery __________ */
+@media (max-width: 992px) {
+    footer p {
+        width: 100% !important;
+    }
+    footer .linksParent ul li a {
+        margin-bottom: 0.75rem;
+        bottom: -3px;
+    }
+    footer .linksParent h4 {
+        margin-bottom: 1.5rem;
+    }
+    footer .contentParent h4 {
+       display: none;
+    }
+}
+@media (max-width: 769px) {
+    footer .footerDetails .logo {
+        width: 125px;
+    }
+    footer .linksParent h4 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* _______________________________________________________ end footer _________________________________________________________ */

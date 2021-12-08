@@ -1,0 +1,108 @@
+.ourProject {
+    padding-bottom: 3rem;
+    background-color: rgba(241, 241, 245, 50%);
+    position: relative;
+}
+
+.ourProject .ourProjectHeader {
+    padding-top: 2rem;
+}
+
+.ourProject .ourProjectHeader div {
+    text-align: start;
+    padding-bottom: 1.5rem;
+}
+
+.ourProject .ourProjectHeader div h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.ourProject .ourProjectimg {
+    position: relative;
+    padding-inline-start: 3rem;
+}
+
+.ourProject .ourProjectimg {
+    position: relative;
+    border-radius: 0 0 0 22px;
+    height: 100%;
+}
+
+.ourProject .ourProjectimg .imgParent {
+    height: 100%;
+}
+.ourProject .ourProjectimg .imgParent img {
+    border-radius: 0 0 0 22px;
+    width: 100%;
+    height: 100%;
+}
+
+.ourProject .ourProjectimg .imgParent img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    opacity: 70%;
+    height: 100%;
+}
+
+.ourProject .ourProjectimg .imgContent {
+    background: #F99D25;
+    padding: 3rem 2rem;
+    border-radius: 0 22px 0 22px;
+    position: absolute;
+    bottom: 0;
+    width: 78%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ourProject .ourProjectimg .imgContent img {
+    width: 75px;
+}
+
+.ourProject .ourProjectimg .imgContent p {
+    margin-bottom: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 0.86rem;
+    padding-inline-start: 1.5rem;
+}
+
+
+@media (max-width: 992px) {
+    .ourProject .ourProjectimg  {
+        padding-inline-start: 0;
+    }
+    .ourProject .ourProjectimg .imgContent img {
+        width: 70px;
+    }
+    .ourProject .ourProjectimg .imgContent {
+        width: 80%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .ourProject .ourProjectimg .imgContent img {
+        width: 65px;
+    }
+    .ourProject .ourProjectimg .imgContent {
+        width: 85%;
+        padding: 1.5rem 2rem;
+    }
+}
+@media (max-width: 569px) {
+    .ourProject .ourProjectimg .imgContent img {
+        width: 60px;
+    }
+    .ourProject .ourProjectimg .imgContent {
+        width: 100%;
+        border-radius: 0 0 0 22px;
+    }
+}
